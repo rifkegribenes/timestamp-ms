@@ -1,5 +1,5 @@
 {
-	"name": "rifkegribenes-timestamp-ms,
+	"name": "rifkegribenes-timestamp-ms",
 	"dependencies": {
 		"express": "^4.14.0"
 	},
