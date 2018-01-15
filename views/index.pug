@@ -8,6 +8,7 @@ html
     link(id='favicon', rel='icon', type='image/x-icon', href='')
     link(href='https://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet')
     link(href='/public/style.css', rel='stylesheet')
+    script(src='/public/script.js') 
 
   body
     header(class='header')
@@ -16,15 +17,15 @@ html
       
     main(class='container')
       h3 User stories:
-    	blockquote I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)
-    	blockquote If it does, it returns both the Unix timestamp and the natural language form of that date.
-    	blockquote If it does not contain a date or Unix timestamp, it returns null for those properties.
+      blockquote I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)
+      blockquote If it does, it returns both the Unix timestamp and the natural language form of that date.
+      blockquote If it does not contain a date or Unix timestamp, it returns null for those properties.
       div(class='row')
         div(class='col')
           div(class='card')
             div(class='card__title') Example Usage
-              p #{fullUrl}api/timestamp/December%2015,%202015<br>
-              p #{fullUrl}api/timestamp/1450137600
+              p(id='natural-link')
+              p(id='unix-link')
             div(id='try' class='card__action')
         div(class='col')
           div(class='card')
