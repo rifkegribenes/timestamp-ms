@@ -32,14 +32,15 @@ const parsetime = (time) => {
 
 
 // const moment = require('moment');
-const unixTime = (inputDate) => { 
-  const date = new Date(inputDate * 1000);
+const unix2Natural = (unix) => { 
+  const date = new Date(unix * 1000);
 	const day = date.getDate();
-		month			=	'0' + (date.getMonth() + 1),
-		year			=	date.getFullYear(),
-		hours			= date.getHours(),
-		minutes		=	'0' + date.getMinutes(),
-		seconds		=	'0' + date.getSeconds();
+	const	months	=	['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+	const	year =	date.getFullYear();
+  return `${months[date.getMonth()]} ${day}, ${year}`;
+}
+
+const natural2Unix = (natural) => new Date(natural).getTime() / 1000;
 
 module.exports = {
   parse: (req, res) => {
@@ -50,9 +51,9 @@ module.exports = {
     }
     if (+date >= 0) {
         dateResult.unix = +date;
-        dateResult.natural = moment.unix(+date).format("MMMM D, YYYY")
+        dateResult.natural = unix2Natural(+date);
     }
-    if (isNaN(+date) && moment(date, "MMMM D, YYYY").isValid()) {
+    if (isNaN(+date)) {
         dateResult.unix = moment(date, "MMMM D, YYYY").format("X");
         dateResult.natural = date;
     }
