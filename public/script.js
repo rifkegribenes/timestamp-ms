@@ -2,8 +2,8 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   const Root_Url = window.location.href;
-	const naturalLink = `<div class="card__url">${Root_Url}December 15, 2015</div><a target="_blank" href="${Root_Url}December 15, 2015" class="card__action">Try It</a>`;
-	const unixLink = `<div class="card__url">${Root_Url}1450137600</div><a target="_blank" href="${Root_Url}1450137600" class="card__action">Try It</a>`;
+	const naturalLink = `<div class="card__url">${Root_Url}December 15, 2015</div><a target="_blank" href="${Root_Url}December 15, 2015" class="card__action">Try Natural Date</a>`;
+	const unixLink = `<div class="card__url">${Root_Url}1450137600</div><a target="_blank" href="${Root_Url}1450137600" class="card__action">Try Unix Timestamp</a>`;
   const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
   const now = new Date();
   const dd = now.getDate();
