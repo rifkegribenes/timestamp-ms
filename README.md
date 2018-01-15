@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Welcome to the Glitch BETA
 =========================
 
@@ -25,3 +26,6 @@ Made by [Fog Creek](https://fogcreek.com/)
 -------------------
 
 \ ゜o゜)ノ
+=======
+# Backend Challenges boilerplate - package.json
+>>>>>>> 95d93ee82cfe20004ecc90cdd31aabbf6c791b53
