@@ -14,22 +14,11 @@ app.use('/', api);
 app.set('view engine', 'pug');
 
 
-
-// listen for requests :)
-var listener = app.listen(process.env.PORT, function () {
-  console.log('Your app is listening on port ' + listener.address().port);
-});
-
 const server = http.createServer(app);
 const port = process.env.PORT || '3000';
 app.set('port', port);
 server.listen(port, () => console.log(`API running on localhost:${port}`));
 
-
-const http = require("http");
-const url = require("url");
-
-const port = process.argv[2];
 
 const unixtime = (time) => {
  return { unixtime: time.getTime() };
