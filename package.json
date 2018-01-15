@@ -1,17 +1,24 @@
 {
-	"name": "rifkegribenes-timestamp-ms",
-	"dependencies": {
-		"express": "^4.14.0"
-	},
-	"main": "server.js",
-	"scripts": {
-		"start": "node server.js"
-	},
-	"engines": {
-		"node": "4.4.5"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/rifkegribenes/timestamp-ms.git"
-	}
+  "name": "rifkegribenes-timestamp-ms",
+  "version": "1.0.0",
+  "description": "Timestamp Microservice API (freeCodeCamp Back End API Project)",
+  "main": "server.js",
+  "dependencies": {
+    "pug": "^2.0.0-rc.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rifkegribenes/timestamp-ms.git"
+  },
+  "author": "Sarah Schneider",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rifkegribenes/timestamp-ms/issues"
+  },
+  "homepage": "https://github.com/rifkegribenes/timestamp-ms#readme"
 }
