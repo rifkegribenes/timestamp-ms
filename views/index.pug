@@ -7,23 +7,32 @@ html
     title #{title} - Timestamp Microservice
     link(id='favicon', rel='icon', type='image/x-icon', href='')
     link(href='https://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet')
-    link(href='/main.css', rel='stylesheet')
+    link(href='/public/style.css', rel='stylesheet')
 
   body
     header(class='header')
-      div(class='header-wrap') 
+      div(class='header__wrap') 
         h1 Timestamp Microservice
         h2 FreeCodeCamp Back End Certification API project #1
-      div(class='icon-wrap')
-        a(class='github' href='')
+      div(class='icon__wrap')
+        a(class='github' href='https://github.com/rifkegribenes/timestamp-ms')
+          img(src='' alt='view code on github')
       
     main(class='container')
-      
-    
-    a(class='button' href='google.com') Google
-
-    p #{fullUrl}api/v1/timestamp/December%2015,%202015<br>
-    p #{fullUrl}api/v1/timestamp/1450137600
-
-    h2 Example Output
-    p { "unix": 1450137600, "natural": "December 15, 2015" } 
+      h3 User stories:
+    	blockquote I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)
+    	blockquote If it does, it returns both the Unix timestamp and the natural language form of that date.
+    	blockquote If it does not contain a date or Unix timestamp, it returns null for those properties.
+      div(class='row')
+        div(class='col')
+          div(class='card')
+            div(class='card__title') Example Usage
+              p #{fullUrl}api/timestamp/December%2015,%202015<br>
+              p #{fullUrl}api/timestamp/1450137600
+            div(id='try' class='card__action')
+        div(class='col')
+          div(class='card')
+            div(class='card__title') Example Output
+            pre { unix: 1450117800, natural: "December 15, 2015" }
+            
+    footer(
