@@ -36,9 +36,8 @@ header {
 }
 
 .col {
-  width: 48%;
-  max-width: 580px;
-}
+  min-width: 50%;
+} 
 
 @media (max-width: 600px) {
   .col {
@@ -56,13 +55,21 @@ blockquote,.card{
   border: 1px solid lightgray;
   background: white;
   border-radius: 4px;
-  box-shadow: 0px 0px 5px lightgray;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
   width: 100%;
 }
 
 .card__title {
   margin-top: 0;
   padding-top: 0;
+}
+
+.card__url {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .card__action {
@@ -74,10 +81,13 @@ blockquote,.card{
   border-radius: 4px;
   color: white;
   font-weight: 700;
+  border-top: 10px;
 }
 
-.card__action::hover {
-  box-shadow: 0px 0px 5px purple;
+.card__action:hover {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
 }
 
 pre{

@@ -24,12 +24,12 @@ html
             li If it does, it returns both the Unix timestamp and the natural language form of that date.
             li If it does not contain a date or Unix timestamp, it returns null for those properties.
       div(class='row')
-        div(class='col')
+        div(class='col col-1')
           div(class='card')
             h3(class='card__title') Example Usage
-            p(id='natural-link')
-            p(id='unix-link')
-            p(id='today')
+            div(id='natural-link' class='card__url')
+            div(id='unix-link' class='card__url')
+            div(id='today' class='card__url')
         div(class='col')
           div(class='card')
             h3(class='card__title') Example Output
