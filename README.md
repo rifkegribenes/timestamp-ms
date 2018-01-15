@@ -10,9 +10,9 @@
 
 #### Example Usage:
 
-<https://vp-timestamp.herokuapp.com/December15,2015>
+<https://rifkegribenes-timestamp-ms.glitch.me/December15,2015>
 
-<https://vp-timestamp.herokuapp.com/1450137600>
+<https://rifkegribenes-timestamp-ms.glitch.me/1450137600>
 
 #### Example Output:
 
@@ -26,13 +26,13 @@
 
 ##### UI:
 
-![timestamp-micoservice-ui](https://res.cloudinary.com/vinaypuppal/image/upload/c_scale,w_1024/v1465061495/fcc/timestamp-ui.png)
+![timestamp-micoservice-ui] (screenshot)
 
 #### How To Run This App Locally
 
 Clone This Repoistory
 ```bash
-git clone https://github.com/vinaypuppal/timestamp-microservice.git
+git clone https://github.com/rifkegribenes/timestamp-ms.git
 ```
 
 ```bash
