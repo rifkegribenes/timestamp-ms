@@ -2,12 +2,10 @@ const express = require('express');
 const router = express.Router();
 
 // modules this api provides routing for
-const module = require('../module');
+const timestamp = require('../timestamp');
 
-// TimeStamp Microservice Routes
-// (note, catching a variety of urls and routing them to the same place)
-router.route('/timestamp/api/:query').get(timestamp.parse);
-router.route('/timestamp/:query').get(timestamp.parse);
+// Routes
+router.route('/:query').get(timestamp.parse);
 
 // If it's not an api request, display the index page (found in frontend)
 router.get('*', (req, res) => {

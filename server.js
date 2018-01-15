@@ -8,7 +8,6 @@ const app = express();
 const api = require('./routes/api');
 
 app.use(express.static('public'));
-app.use('/api/', api);
 app.use('/', api);
 
 app.set('view engine', 'pug');
