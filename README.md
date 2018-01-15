@@ -1,31 +1,46 @@
-<<<<<<< HEAD
-Welcome to the Glitch BETA
-=========================
+## Timestamp microservice (Freecodecamp Project)
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+### User stories:
 
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
+* I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016).
 
-Find out more [about Glitch](https://glitch.com/about).
+* If it does, it returns both the Unix timestamp and the natural language form of that date.
 
+* If it does not contain a date or Unix timestamp, it returns null for those properties.
 
-Your Project
-------------
+#### Example Usage:
 
-On the front-end,
-- edit `public/client.js`, `public/style.css` and `views/index.html`
-- drag in `assets`, like images or music, to add them to your project
+<https://vp-timestamp.herokuapp.com/December15,2015>
 
-On the back-end,
-- your app starts at `server.js`
-- add frameworks and packages in `package.json`
-- safely store app secrets in `.env` (nobody can see this but you and people you invite)
+<https://vp-timestamp.herokuapp.com/1450137600>
 
+#### Example Output:
 
-Made by [Fog Creek](https://fogcreek.com/)
--------------------
+```javascript
+	{
+	unix: 1450117800,
+	natural: "December 15, 2015"
+	}
+	
+```
 
-\ ゜o゜)ノ
-=======
-# Backend Challenges boilerplate - package.json
->>>>>>> 95d93ee82cfe20004ecc90cdd31aabbf6c791b53
+##### UI:
+
+![timestamp-micoservice-ui](https://res.cloudinary.com/vinaypuppal/image/upload/c_scale,w_1024/v1465061495/fcc/timestamp-ui.png)
+
+#### How To Run This App Locally
+
+Clone This Repoistory
+```bash
+git clone https://github.com/vinaypuppal/timestamp-microservice.git
+```
+
+```bash
+cd <cloned directory>
+```
+
+Install dependencies and start server
+```bash
+npm install
+npm run dev
+```
