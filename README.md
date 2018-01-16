@@ -1,6 +1,8 @@
 ## Timestamp microservice (Freecodecamp Project)
 
-### User stories:
+### Live: https://rifkegribenes-timestamp-ms.glitch.me/
+
+#### User stories:
 
 * I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016).
 
@@ -24,23 +26,6 @@
 	
 ```
 
-#### UI:
+#### Screenshot:
 
 ![timestamp-micoservice-ui](https://cdn.glitch.com/22a70955-ef8c-44b6-9fd7-5377da7be776%2FScreen%20Shot%202018-01-15%20at%203.35.51%20PM.png?1516059429993)
-
-#### How To Run This App Locally
-
-Clone This Repoistory
-```bash
-git clone https://github.com/rifkegribenes/timestamp-ms.git
-```
-
-```bash
-cd <cloned directory>
-```
-
-Install dependencies and start server
-```bash
-npm install
-npm run dev
-```
